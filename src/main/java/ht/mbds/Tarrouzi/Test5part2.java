@@ -66,7 +66,7 @@ public class Test5part2 {
                         .build();
 
         // Phase 2 : répondre à une question en utilisant les segments les plus pertinents pour y répondre.
-        String question = "Comment s'appelle le chat de Pierre ?";
+        String question = "Pierre appelle son chat. Qu'est-ce qu'il pourrait dire ";
 
         // L'assistant recherche dans la base vectorielle les segments les plus pertinents
         // pour répondre à la question, en comparant les embeddings de la base et celui de la question.
