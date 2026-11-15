@@ -67,14 +67,15 @@ public class Test5part2 {
 
         // Phase 2 : répondre à une question en utilisant les segments les plus pertinents pour y répondre.
         String question = "Pierre appelle son chat. Qu'est-ce qu'il pourrait dire ";
-
+        String question2 = "Quelle est la capitale de la France ";
         // L'assistant recherche dans la base vectorielle les segments les plus pertinents
         // pour répondre à la question, en comparant les embeddings de la base et celui de la question.
         // Ces informations sont ajoutées à la question et le tout est envoyé au LLM qui a maintenant
         // les bonnes informations (contenues dans le fichier lu dans la phase 1) pour répondre.
         String reponse = assistant.chat(question);
+        String reponse2 = assistant.chat(question2);
         // Affiche la réponse du LLM.
-        System.out.println(reponse);
+        System.out.println(reponse2);
     }
 
 }
