@@ -23,6 +23,9 @@ public class test2 {
                 UserMessage.from("can you guess my name ? ")
         );
 
+        ChatResponse response4sansoutils = model.chat(
+                UserMessage.from("Je dois partir dans 2 jours à Paris ; j'y resterai 3 jours. Est-ce que je dois mettre un parapluie dans mes valises ? ")
+        );
 
 
         System.out.println("Réponse : " + response.aiMessage().text());
@@ -38,6 +41,10 @@ public class test2 {
         TokenUsage tokens3 = response3.tokenUsage();
         System.out.println( tokens3);
 
+
+        System.out.println("Réponse : " + response4sansoutils .aiMessage().text());
+        TokenUsage tokens4 = response4sansoutils .tokenUsage();
+        System.out.println( tokens3);
 
     }
 }
